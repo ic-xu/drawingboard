@@ -1,0 +1,36 @@
+name: flutter_drawing_board
+description: A Flutter package of drawing board, provides basic drawing tools, canvas operations, and image data acquisition.
+version: 0.2.6
+homepage: https://github.com/fluttercandies/flutter_drawing_board
+publish_to: 'https://pub.dev'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #颜色选择
+  flutter_hsvcolor_picker: ^1.0.2
+#  flutter_colorpicker: ^1.0.3
+
+  # 自定义Mqtt客户端
+  mqtt_client:
+    git:
+      url: git://github.com/ic-xu/mqtt_client
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+
+
+# The following section is specific to Flutter.
+flutter:
+
+  assets:
+    - assets/bg/
