@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_drawing_board:
+  drawingboard:
     path: ../
 
 
