@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_drawing_board/src/helper/ex_paint.dart';
+import 'package:drawingboard/src/helper/ex_paint.dart';
 
 import 'drawing_controller.dart';
 import 'paint_contents/custom_text.dart';

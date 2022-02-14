@@ -1,4 +1,4 @@
-library flutter_drawing_board;
+library drawingboard;
 
 export 'src/drawing_board.dart';
 export 'src/drawing_controller.dart';

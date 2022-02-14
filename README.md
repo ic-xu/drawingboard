@@ -15,7 +15,7 @@ A Flutter package of drawing board.
 ```dart
 //simple example
 
-import 'package:flutter_drawing_board/flutter_drawing_board.dart';
+import 'package:flutter_drawing_board/drawingboard.dart';
 
 DrawingBoard(
   background: Container(width: 400, height: 400, color: Colors.white),
@@ -27,7 +27,7 @@ DrawingBoard(
 ```dart
 //获取画板数据
 
-import 'package:flutter_drawing_board/flutter_drawing_board.dart';
+import 'package:flutter_drawing_board/drawingboard.dart';
 
 final DrawingController _drawingController = DrawingController();
 
