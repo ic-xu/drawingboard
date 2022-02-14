@@ -1,10 +1,9 @@
-import 'dart:ffi';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'drawing_controller.dart';
 
+import 'drawing_controller.dart';
 import 'helper/color_pic.dart';
 import 'helper/edit_text.dart';
 import 'helper/ex_value_builder.dart';
@@ -135,12 +134,13 @@ class _DrawingBoardState extends State<DrawingBoard>
         // ListView.builder(itemCount: contentList.length,itemBuilder: (context,index) =>contentList[index]),
         Positioned(
           bottom: 5.0,
-          child: Row(
-            children: [
-              // if (widget.showDefaultActions) _buildDefaultActions,
-              if (widget.showDefaultTools) _buildDefaultTools,
-            ],
-          ),
+          // child: Column(
+          //   children: [
+          // if (widget.showDefaultActions) _buildDefaultActions,
+          // if (widget.showDefaultTools)
+          child: _buildDefaultTools,
+          // ],
+          // ),
         ),
       ],
     );
@@ -255,7 +255,8 @@ class _DrawingBoardState extends State<DrawingBoard>
   /// 构建默认工具栏
   Widget get _buildDefaultTools {
     return Container(
-        child: SingleChildScrollView(
+      child: Scrollbar(
+       child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           padding: EdgeInsets.zero,
           physics: const BouncingScrollPhysics(),
@@ -332,7 +333,8 @@ class _DrawingBoardState extends State<DrawingBoard>
             ],
           ),
         ),
-      );
+      ),
+    );
   }
 
   /// 构建工具项
