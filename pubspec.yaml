@@ -16,10 +16,6 @@ dependencies:
   flutter_hsvcolor_picker: ^1.0.2
 #  flutter_colorpicker: ^1.0.3
 
-  # 自定义Mqtt客户端
-  mqtt_client:
-    git:
-      url: git://github.com/ic-xu/mqtt_client
 dev_dependencies:
   flutter_test:
     sdk: flutter
